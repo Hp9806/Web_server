@@ -1,25 +1,3 @@
-# Developing a Simple Webserver
-## AIM:
-
-To develop a webserver to display the top five programming language.
-## DESIGN STEPS:
-### Step 1:
-
-HTML content creation
-### Step 2:
-
-Design of webserver workflow
-### Step 3:
-
-Implementation using Python code
-### Step 4:
-
-Serving the HTML pages.
-### Step 5:
-
-Testing the webserver
-## PROGRAM:
-~~~
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
 <!DOCTYPE html>
@@ -48,9 +26,3 @@ server_address = ('',8080)
 httpd = HTTPServer(server_address,myhandler)
 print("my server is running...")
 httpd.serve_forever()
-~~~
-# OUTPUT
-### Server Side Output
-![Server Side Output](./Images/Server_side_output.png)
-### Clint Side Output
-![Clint Side Output](./Images/Clint_side_output.png)
